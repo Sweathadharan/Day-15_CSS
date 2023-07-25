@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock">
+        <div class="display">
+            
+        </div>
+    </div>
+
+    <script>
+      const clock=document.querySelector(".display")  
+      let time=new Date();
+    //   clock.textContent=time;
+    let sec=time.getSeconds();
+    let min=time.getMinutes();
+    let hr=time.getHours();
+    clock.textContent=hr+':'+min + ':' + sec;
+      </script>
+
+</body>
+</html>
